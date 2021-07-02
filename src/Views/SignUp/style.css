@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap');
+
+:root {
+    --heading-font: 'Barlow Semi Condensed', 'sans-serif';
+    --para-font: 'Comfortaa', 'cursive';
+    --primary-color: #fdd935;
+    --secondary-color: #000000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fdd935;
+}
+
+.color-style {
+    color: #fff !important;
+}
+
+.page-details {
+    height: auto;
+    width: 100%;
+    padding: 5px;
+    text-align: left;
+}
+
+.page-details img {
+    height: 300px;
+    width: 400px;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    font-size: 2.3rem;
+    display: inline;
+}
+
+p {
+    font-family: var(--para-font);
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+.form-container {
+    height: auto;
+    width: 100%;
+    margin-top: 5rem;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.form-container img {
+    height: 70px;
+    width: 70px;
+    margin-left: 2rem !important;
+}
+
+.form-container label {
+    font-family: var(--para-font);
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+.form-container input {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 4px rgb(236, 235, 235);
+    margin-bottom: 1rem;
+    font-family: var(--para-font);
+}
+
+.form-container input:focus {
+    box-shadow: none !important;
+    border: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+/* media query */
+@media screen and (max-width:490px) {
+    .page-details img {
+        margin-top: 3rem;
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .page-details img {
+        margin-top: 3rem;
+        height: 200px;
+        width: 100%;
+    }
+}

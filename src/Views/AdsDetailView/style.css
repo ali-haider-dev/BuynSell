@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap');
+:root{
+    --heading-font:'Barlow Semi Condensed', 'sans-serif';
+    --para-font:'Comfortaa', 'cursive';
+    --primary-color:#fdd935;
+    --secondary-color:#000000;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.ad-image-container {
+    margin-top:6rem;
+    
+}
+.ad-details-container {
+    margin-top: 5rem;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--para-font)
+    
+}
+.ad-details-container h4{
+    font-family: var(--heading-font);
+    text-align: left;
+} 
+.ad-details-container p{ font-family: var(--para-font);}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap');
+:root{
+    --heading-font:'Barlow Semi Condensed', 'sans-serif';
+    --para-font:'Comfortaa', 'cursive';
+    --primary-color:#fdd935;
+    --secondary-color:#000000;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.image-container img {
+    margin-top:4rem;
+    height: 400px;
+    width: 450px;
+}
+.goback-btn {
+    height: 2rem;
+    width: 6rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    font-size: 0.9rem;
+}
+.adpostform-container {
+    margin-top: 5rem;
+    background-color: #fff;
+    border-radius: 5px;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+.adpostform-container input {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 4px rgb(236, 235, 235);
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+    font-family: var(--para-font);
+}
+.adpostform-container textarea{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 4px rgb(236, 235, 235);
+    margin-top: 1rem;
+    font-family: var(--para-font);
+}
+.adpostform-container input:focus {
+    box-shadow: none !important;
+    border: none;
+}
+.adpostform-container textarea:focus {
+    box-shadow: none !important;
+    border: none;
+}
+.adpostform-container select{
+    box-shadow: 2px 2px 20px 4px rgb(236, 235, 235) !important;
+    font-family: var(--para-font);
+
+    
+}
+.adpostform-container select:focus {
+    box-shadow: 2px 2px 20px 4px rgb(236, 235, 235) !important;
+
+    border: none;
+}
+input[type="file"] {
+    display: none;
+}
+.file-input {
+    height: 2rem;
+    text-align: center;
+    width:auto;
+    background-color: #fdd935;
+    border: none;
+    display: block;
+    color: #fff;
+    padding: 5px;
+    margin-top: 1rem;
+    font-family: var(--para-font);
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px 1px #fdd935;
+}
+/* media query  */
+@media screen and (max-width:460px){
+    .image-container img {
+        
+        height: 300px;
+        width: 350px;
+    }
+}
+@media screen and (max-width:370px){
+    .image-container img {
+        
+        height: 250px;
+        width: 100%;
+    }
+}

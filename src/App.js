@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {useEffect,useState} from 'react'
+import {auth} from './Config/firebase'
+import ViewsNavigation from './Config/router'
+import PostAdView from '../src/Views/PostAd'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [currentUser, setCurrentUser]=useState()
+  const [loadingView, setLoadingView] = useState(true)
+  useEffect(()=>{
+    auth.onAuthStateChanged(user=>{
+      if(user){
+        setCurrentUser(user)
+        setLoadingView(false)
+      } else{
+        setCurrentUser(null)
+        setLoadingView(false)
+      }
+      
+    
+    })
+  },[])
+  return <>
+      { loadingView ? <div className="loadingView">
+        <h1 className="logo">BUYN<span className="color-style">SELL.</span></h1>
+      </div> : <ViewsNavigation currentUser={currentUser} />  }
+  
+  </>
+      
+   
+  
 }
 
 export default App;

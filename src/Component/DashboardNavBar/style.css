@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap');
+:root{
+    --heading-font:'Barlow Semi Condensed', 'sans-serif';
+    --para-font:'Comfortaa', 'cursive';
+    --primary-color:#fdd935;
+    --secondary-color:#000000;
+}
+.my-navigations {
+    background-color: #fdd935;
+    position: fixed;
+    width: 100%;
+    z-index:10;
+    
+    
+}
+.nav-link {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    color: #000000!important;
+    font-family: var(--heading-font);
+   
+
+}
+.nav-link:hover{
+    color: #ffff !important;
+    transition: 0.6s;
+}
+.user-details-box {
+   
+    
+    border-radius:50%;
+    background-color: #fff;
+    display: flex;
+    
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+}
+.user-details-box img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+   
+    
+}
+.user-details-box h1{
+    font-size: 1rem;
+   
+    
+   
+}
+.navbar-brand {
+    color: var(--secondary-color);
+    font-weight: bold !important;
+    font-family:var(--heading-font);
+    font-size: 1.5;
+}
+.navbar-brand:hover{color: #000000;}
+.color-style {
+    color: #FFF !important;
+    font-weight: bold;
+}
